@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Артём Яковлев](https://up.htmlacademy.ru/adaptive/20/user/951793).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Пудов](https://htmlacademy.ru/profile/id216332).
 
 ---
 
