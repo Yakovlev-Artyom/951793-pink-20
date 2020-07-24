@@ -6,7 +6,7 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo">
+      <a class="page-header__logo" href="index.html">
         <img src="https://via.placeholder.com/150x150">
       </a>
       <nav class="page-header-nav main-nav">
@@ -38,68 +38,107 @@
           </ul>
         </div>
       </nav>
-      <span class="">Фотографии пользователей</span>
+      <h1 class="">Фотографии пользователей</h1>
     </header>
     <main class="page-main">
       <h2 class="visually-hidden">Фотографии пользователей</h2>
       <p class="feed__preview">Взгляните на фотографии, которые выкладывают другие пользователи! Видите, как не хватает ваших?</p>
       <section class="feed">
         <div class="feed__list">
-          <form class="feed__item" href="#">
-            <img class="feed__photo panorama" src="https://via.placeholder.com/150x150">
+          <div class="feed__item">
+            <a href="#">
+              <img class="feed__photo panorama" src="https://via.placeholder.com/150x150">
+            </a>
             <h3 class="feed__author">Анна</h3>
             <time class="feed__time" datetime="2020-07-22T15:07">(4 часа назад)</time>
             <p class="feed__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-            <p><input type="checkbox" name="like" value="liked" class="feed__like">Нравится:215</p>
-          </form>
-          <form class="feed__item" href="#">
-            <img class="feed__photo" src="https://via.placeholder.com/150x150">
+            <p><button class="feed__like" type="button" name="like">Нравится:215</p>
+          </div>
+          <div class="feed__item">
+            <a href="#">
+              <img class="feed__photo" src="https://via.placeholder.com/150x150">
+            </a>
             <h3 class="feed__author">Левон</h3>
             <time class="feed__time" datetime="2020-07-22T14:07">(5 часов назад)</time>
             <p class="feed__text">Вчера он на Луну летал, сегодня в руки к нам попал.</p>
-            <p><input type="checkbox" name="like" value="liked" class="feed__like">Нравится:356</p>
-          </form>
-          <form class="feed__item" href="#">
-            <img class="feed__photo" src="https://via.placeholder.com/150x150">
+            <div class="feed__like">
+              <button class="feed__like__button" type="button" name="like">
+                <span class="feed__like__text">Нравится:356</span>
+              </button>
+            </div>
+          </div>
+          <div class="feed__item">
+            <a href="#">
+              <img class="feed__photo" src="https://via.placeholder.com/150x150">
+            </a>
             <h3 class="feed__author">Антон</h3>
             <time class="feed__time" datetime="2020-07-22T02:07">(15 часов назад)</time>
             <p class="feed__text">Соседи будут рады!</p>
-            <p><input type="checkbox" name="like" value="liked" class="feed__like">Нравится:666</p>
-          </form>
-          <form class="feed__item" href="#">
-            <img class="feed__photo" src="https://via.placeholder.com/150x150">
+            <div class="feed__like">
+              <button class="feed__like__button" type="button" name="like">
+                <span class="feed__like__text">Нравится:666</span>
+              </button>
+            </div>
+          </div>
+          <div class="feed__item">
+            <a href="#">
+              <img class="feed__photo" src="https://via.placeholder.com/150x150">
+            </a>
             <h3 class="feed__author">Борис</h3>
             <time class="feed__time" datetime="2020-07-21T22:07">(20 часов назад)</time>
             <p class="feed__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-            <p><input type="checkbox" name="like" value="liked" class="feed__like">Нравится:215</p>
-          </form>
-          <form class="feed__item" href="#">
-            <img class="feed__photo" src="https://via.placeholder.com/150x150">
+            <div class="feed__like">
+              <button class="feed__like__button" type="button" name="like">
+                <span class="feed__like__text">Нравится:215</span>
+              </button>
+            </div>
+          </div>
+          <div class="feed__item">
+            <a href="#">
+              <img class="feed__photo" src="https://via.placeholder.com/150x150">
+            </a>
             <h3 class="feed__author">Сергей</h3>
             <time class="feed__time" datetime="2020-07-21T16:07">(25 часов назад)</time>
             <p class="feed__text">Самая кубанская в мире!</p>
-            <p><input type="checkbox" name="like" value="liked" class="feed__like">Нравится:4</p>
-          </form>
-          <form class="feed__item" href="#">
-            <img class="feed__photo" src="https://via.placeholder.com/150x150">
+            <div class="feed__like">
+              <button class="feed__like__button" type="button" name="like">
+                <span class="feed__like__text">Нравится:4</span>
+              </button>
+            </div>
+          </div>
+          <div class="feed__item">
+            <a href="#">
+              <img class="feed__photo" src="https://via.placeholder.com/150x150">
+            </a>
             <h3 class="feed__author">Максим</h3>
             <time class="feed__time" datetime="2020-07-21T01:07">(40 часов назад)</time>
             <p class="feed__text">Где снег-то?</p>
-            <p><input type="checkbox" name="like" value="liked" class="feed__like">Нравится:150</p>
-          </form>
-          <form class="feed__item" href="#">
-            <img class="feed__photo" src="https://via.placeholder.com/150x150">
+            <div class="feed__like">
+              <button class="feed__like__button" type="button" name="like">
+                <span class="feed__like__text">Нравится:150</span>
+              </button>
+            </div>
+          </div>
+          <div class="feed__item">
+            <a href="#">
+              <img class="feed__photo" src="https://via.placeholder.com/150x150">
+            </a>
             <h3 class="feed__author">Надежда</h3>
             <time class="feed__time" datetime="2020-07-20T20:07">(45 часов назад)</time>
             <p class="feed__text">Всем GM и взаимные лайки!</p>
-            <p><input type="checkbox" name="like" value="liked" class="feed__like">Нравится:2560</p>
-          </form>
+            <div class="feed__like">
+              <button class="feed__like__button" type="button" name="like">
+                <span class="feed__like__text">Нравится:2560</span>
+              </button>
+            </div>
+          </div>
         </div>
       </section>
       <section class="editor">
         <span>Затмите их всех! Выкладывайте все что накопилось в телефоне!</span>
       </section>
       <form class="editor__item">
+        <input type="file" name="editor__photo">
         <img class="editor__photo" src="https://via.placeholder.com/150x150">
         <button class="editor__size" type="button">
           <span class="visually-hidden">Изменить размер</span>

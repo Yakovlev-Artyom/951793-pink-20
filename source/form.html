@@ -2,11 +2,11 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="UTF-8">
-    <title>Фотографии - PINK</title>
+    <title>Конкурс - PINK</title>
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo">
+      <a class="page-header__logo" href="index.html">
         <img src="https://via.placeholder.com/150x150">
       </a>
       <nav class="page-header-nav main-nav">
@@ -38,73 +38,93 @@
           </ul>
         </div>
       </nav>
-      <span class="">Конкурс на самое безбашенное путешествие с Пинк</span>
+      <h1 class="">Конкурс на самое безбашенное путешествие с Пинк</h1>
     </header>
     <main class="page-main">
       <h2 class="visually-hidden">Конкурс</h2>
       <section class="contest">
         <p class="contest__preview">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
         <form class="contest__form" action="https://echo.htmlacademy.ru/courses" method="post">
-          <p>
-            <label for="surname-field">Фамилия:</label>
-            <input type="text" name="surname" id="surname-field" placeholder="Укажите фамилию*" required>
-          </p>
-          <p>
-            <label for="name-field">Имя:</label>
-            <input type="text" name="name" id="name-field" placeholder="Введите ваше имя*" required>
-          </p>
-          <p>
-            <label for="patronymic-field">Отчество:</label>
-            <input type="text" name="patronymic" id="patronymic-field" placeholder="Ну и отчество тоже">
-          </p>
-          <span class=""> Ваши безбашенные достижения в путешествии</span>
-          <p>
-            <input type="checkbox" name="selfie-with-shark" id="achievements-1" checked>
-            <label for="achievements-1">Сделал селфи с акулой</label>
-          </p>
-          <p>
-            <input type="checkbox" name="burned-on-the-beach" id="achievements-2" checked>
-            <label for="achievements-2">Обгорел на пляже</label>
-          </p>
-          <p>
-            <input type="checkbox" name="saw-Chuck-Norris" id="achievements-3">
-            <label for="achievements-3">Видел Чака Норриса</label>
-          </p>
-          <p>
-            <input type="checkbox" name="bought-souvenirs" id="achievements-4">
-            <label for="achievements-4">Накупил сувениров</label>
-          </p>
-          <p>
-            <input type="checkbox" name="held-the-tower" id="achievements-5" checked>
-            <label for="achievements-5">Удержал башню</label>
-          </p>
-          <p>
-            <input type="checkbox" name="destroyed-the-hotel" id="achievements-6">
-            <label for="achievements-6">Разгромил отель</label>
-          </p>
-          <p>
-            <label for="telephone-field">Номер телефона</label>
-            <input type="tel" name="telephone-number" id="telephone-field" placeholder="Номер, пожалуйста">
-          </p>
-          <p>
-            <label for="email-field">Адрес почты</label>
-            <input type="email" name="email-adress" id="email-field" placeholder="Введите почту*" required>
-          </p>
-          <span class="">С каким приложением путешествовали?</span>
-          <p>
-            <input type="radio" value="IOS" name="App" id="IOS">
-            <label for="IOS">Pink для iOS</label>
-          </p>
-          <p>
-            <input type="radio" value="Android" name="App" id="Android">
-            <label for="Android">Pink на Android</label>
-          </p>
-          <p>
-            <input type="radio" value="Windows-Phone" name="App" id="Windows-Phone">
-            <label for="Windows-Phone">Windows Phone</label>
-          </p>
-          <span class="">Опишите свои эмоции</span>
-          <textarea name="comment" id="comment-field">Можно прям в красках, не стесняясь в выражениях</textarea>
+          <fieldset class="contest__name-surname">
+            <legend class="visually-hidden"> Ввод персональных данных</legend>
+            <ul class="form__list">
+              <li class="form__item">
+                <label for="surname-field">Фамилия:</label>
+                <input type="text" name="surname" id="surname-field" placeholder="Укажите фамилию*" required>
+              </li>
+              <li class="form__item">
+                <label for="name-field">Имя:</label>
+                <input type="text" name="name" id="name-field" placeholder="Введите ваше имя*" required>
+              </li>
+              <li class="form__item">
+                <label for="patronymic-field">Отчество:</label>
+                <input type="text" name="patronymic" id="patronymic-field" placeholder="Ну и отчество тоже">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="contest__achievements">
+            <legend class="contest__achievements__title"> Ваши безбашенные достижения в путешествии</legend>
+            <ul class="form__list">
+              <li class="form__item">
+                <input type="checkbox" name="selfie-with-shark" id="achievements-1" checked>
+                <label for="achievements-1">Сделал селфи с акулой</label>
+              </li>
+              <li class="form__item">
+                <input type="checkbox" name="burned-on-the-beach" id="achievements-2" checked>
+                <label for="achievements-2">Обгорел на пляже</label>
+              </li>
+              <li class="form__item">
+                <input type="checkbox" name="saw-Chuck-Norris" id="achievements-3">
+                <label for="achievements-3">Видел Чака Норриса</label>
+              </li>
+              <li class="form__item">
+                <input type="checkbox" name="bought-souvenirs" id="achievements-4">
+                <label for="achievements-4">Накупил сувениров</label>
+              </li>
+              <li class="form__item">
+                <input type="checkbox" name="held-the-tower" id="achievements-5" checked>
+                <label for="achievements-5">Удержал башню</label>
+              </li>
+              <li class="form__item">
+                <input type="checkbox" name="destroyed-the-hotel" id="achievements-6">
+                <label for="achievements-6">Разгромил отель</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="contest__contacts">
+            <legend class="visually-hidden">Ввод контактных данных</legend>
+            <ul class="form__list">
+              <li class="form__item">
+                <label for="telephone-field">Номер телефона</label>
+                <input type="tel" name="telephone-number" id="telephone-field" placeholder="Номер, пожалуйста">
+              </li>
+              <li class="form__item">
+                <label for="email-field">Адрес почты</label>
+                <input type="email" name="email-adress" id="email-field" placeholder="Введите почту*" required>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="contest__app">
+            <legend class="contest__achievements__title">С каким приложением путешествовали?</legend>
+            <ul class="form__list">
+              <li class="form__item">
+                <input type="radio" value="IOS" name="App" id="IOS">
+                <label for="IOS">Pink для iOS</label>
+              </li>
+              <li class="form__item">
+                <input type="radio" value="Android" name="App" id="Android">
+                <label for="Android">Pink на Android</label>
+              </li>
+              <li class="form__item">
+                <input type="radio" value="Windows-Phone" name="App" id="Windows-Phone">
+                <label for="Windows-Phone">Windows Phone</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="contest__comments">
+            <legend class="contest__achievements__title">Опишите свои эмоции</legend>
+            <textarea name="comment" id="comment-field">Можно прям в красках, не стесняясь в выражениях</textarea>
+          </fieldset>
           <input type="submit" value="Отправить форму">
           <p>*-- обязательные поля</p>
         </form>
