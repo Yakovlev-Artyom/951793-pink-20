@@ -44,17 +44,20 @@
       <h2 class="visually-hidden">Фотографии пользователей</h2>
       <p class="feed__preview">Взгляните на фотографии, которые выкладывают другие пользователи! Видите, как не хватает ваших?</p>
       <section class="feed">
-        <div class="feed__list">
-          <div class="feed__item">
+        <div class="feed__list post-list">
+          <div class="feed__item post-item">
             <a href="#">
               <img class="feed__photo panorama" src="https://via.placeholder.com/150x150">
             </a>
             <h3 class="feed__author">Анна</h3>
             <time class="feed__time" datetime="2020-07-22T15:07">(4 часа назад)</time>
             <p class="feed__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-            <p><button class="feed__like" type="button" name="like">Нравится:215</p>
+            <div class="feed__like">
+              <button class="feed__like__button" type="button" name="like"></button>
+              <span class="feed__like__text">Нравится:215</span>
+            </div>
           </div>
-          <div class="feed__item">
+          <div class="feed__item post-item">
             <a href="#">
               <img class="feed__photo" src="https://via.placeholder.com/150x150">
             </a>
@@ -62,12 +65,11 @@
             <time class="feed__time" datetime="2020-07-22T14:07">(5 часов назад)</time>
             <p class="feed__text">Вчера он на Луну летал, сегодня в руки к нам попал.</p>
             <div class="feed__like">
-              <button class="feed__like__button" type="button" name="like">
-                <span class="feed__like__text">Нравится:356</span>
-              </button>
+              <button class="feed__like__button" type="button" name="like"></button>
+              <span class="feed__like__text">Нравится:356</span>
             </div>
           </div>
-          <div class="feed__item">
+          <div class="feed__item post-item">
             <a href="#">
               <img class="feed__photo" src="https://via.placeholder.com/150x150">
             </a>
@@ -75,12 +77,11 @@
             <time class="feed__time" datetime="2020-07-22T02:07">(15 часов назад)</time>
             <p class="feed__text">Соседи будут рады!</p>
             <div class="feed__like">
-              <button class="feed__like__button" type="button" name="like">
-                <span class="feed__like__text">Нравится:666</span>
-              </button>
+              <button class="feed__like__button" type="button" name="like"></button>
+              <span class="feed__like__text">Нравится:666</span>
             </div>
           </div>
-          <div class="feed__item">
+          <div class="feed__item post-item">
             <a href="#">
               <img class="feed__photo" src="https://via.placeholder.com/150x150">
             </a>
@@ -88,12 +89,11 @@
             <time class="feed__time" datetime="2020-07-21T22:07">(20 часов назад)</time>
             <p class="feed__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
             <div class="feed__like">
-              <button class="feed__like__button" type="button" name="like">
-                <span class="feed__like__text">Нравится:215</span>
-              </button>
+              <button class="feed__like__button" type="button" name="like"></button>
+              <span class="feed__like__text">Нравится:215</span>
             </div>
           </div>
-          <div class="feed__item">
+          <div class="feed__item post-item">
             <a href="#">
               <img class="feed__photo" src="https://via.placeholder.com/150x150">
             </a>
@@ -101,12 +101,11 @@
             <time class="feed__time" datetime="2020-07-21T16:07">(25 часов назад)</time>
             <p class="feed__text">Самая кубанская в мире!</p>
             <div class="feed__like">
-              <button class="feed__like__button" type="button" name="like">
+              <button class="feed__like__button" type="button" name="like"></button>
                 <span class="feed__like__text">Нравится:4</span>
-              </button>
             </div>
           </div>
-          <div class="feed__item">
+          <div class="feed__item post-item">
             <a href="#">
               <img class="feed__photo" src="https://via.placeholder.com/150x150">
             </a>
@@ -114,12 +113,11 @@
             <time class="feed__time" datetime="2020-07-21T01:07">(40 часов назад)</time>
             <p class="feed__text">Где снег-то?</p>
             <div class="feed__like">
-              <button class="feed__like__button" type="button" name="like">
+              <button class="feed__like__button" type="button" name="like"></button>
                 <span class="feed__like__text">Нравится:150</span>
-              </button>
             </div>
           </div>
-          <div class="feed__item">
+          <div class="feed__item post-item">
             <a href="#">
               <img class="feed__photo" src="https://via.placeholder.com/150x150">
             </a>
@@ -127,9 +125,8 @@
             <time class="feed__time" datetime="2020-07-20T20:07">(45 часов назад)</time>
             <p class="feed__text">Всем GM и взаимные лайки!</p>
             <div class="feed__like">
-              <button class="feed__like__button" type="button" name="like">
-                <span class="feed__like__text">Нравится:2560</span>
-              </button>
+              <button class="feed__like__button" type="button" name="like"></button>
+              <span class="feed__like__text">Нравится:2560</span>
             </div>
           </div>
         </div>
@@ -138,8 +135,11 @@
         <span>Затмите их всех! Выкладывайте все что накопилось в телефоне!</span>
       </section>
       <form class="editor__item">
-        <input type="file" name="editor__photo">
-        <img class="editor__photo" src="https://via.placeholder.com/150x150">
+        <div class="editor__photo">
+          <label for="my-photo" class="photo-edit"></label>
+          <input type="file" class="photo-edit__button" id="my-photo" name="editor__photo">
+        </div>
+
         <button class="editor__size" type="button">
           <span class="visually-hidden">Изменить размер</span>
         </button>
